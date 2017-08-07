@@ -32,8 +32,6 @@ subprojects {
     targetCompatibility = 1.8
 
     ext {
-        SLF4J_VERSION = '1.7.10'
-        JUNIT_VERSION = '4.11'
     }
 
     dependencyManagement {
@@ -43,6 +41,6 @@ subprojects {
     }
 
     dependencies {
-        testCompile "junit:junit:${JUNIT_VERSION}"
+        compile('org.apache.commons:commons-lang3:3.4')
     }
 }
