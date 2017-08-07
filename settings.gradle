@@ -1,0 +1,5 @@
+rootProject.name = 'voyager'
+
+include "voyager-core"
+include "voyager-web"
+include "voyager-batch"
