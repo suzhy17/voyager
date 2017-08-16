@@ -2,3 +2,4 @@
 
 * @Valid
 * @RequestBody
+* org.modelmapper.ModelMapper
