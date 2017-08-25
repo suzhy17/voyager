@@ -9,7 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes=com.suzhy.voyager.batch.application.CoreApplication.class)
+@SpringBootTest(classes=BatchApplication.class)
 public class BatchApplicationTest {
 	@Autowired
 	private CustomerRepository repository;
