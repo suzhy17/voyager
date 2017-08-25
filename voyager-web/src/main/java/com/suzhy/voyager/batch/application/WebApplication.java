@@ -1,12 +1,14 @@
-package com.suzhy.voyager.application;
+package com.suzhy.voyager.batch.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BatchApplication {
+public class WebApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(BatchApplication.class, args);
+		SpringApplication.run(WebApplication.class, args);
 	}
 
 }
+
+

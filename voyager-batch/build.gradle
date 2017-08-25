@@ -1,5 +1,8 @@
 
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-batch")
+    compile project(':voyager-core')
+//    compile("org.springframework.boot:spring-boot-starter-batch")
+    compile("org.springframework.boot:spring-boot-starter-data-mongodb")
+//    compile("org.mongodb:mongo-java-driver:3.3.0")
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }

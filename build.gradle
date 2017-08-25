@@ -1,13 +1,9 @@
 buildscript {
-    ext {
-        springBootVersion = '1.5.6.RELEASE'
-    }
     repositories {
         mavenCentral()
-        jcenter()
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.6.RELEASE")
     }
 }
 
@@ -17,11 +13,6 @@ allprojects {
 }
 
 subprojects {
-    repositories {
-        mavenCentral()
-        jcenter()
-    }
-
     apply plugin: 'java'
     apply plugin: 'idea'
     apply plugin: 'eclipse'
@@ -30,16 +21,15 @@ subprojects {
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
 
-    ext {
-    }
+    [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
-    dependencyManagement {
-        imports {
-            mavenBom 'io.spring.platform:platform-bom:1.1.2.RELEASE'
-        }
+    repositories {
+        mavenCentral()
     }
 
     dependencies {
+        compile('org.projectlombok:lombok:1.16.8')
         compile('org.apache.commons:commons-lang3:3.4')
+        testCompile("org.springframework.boot:spring-boot-starter-test")
     }
 }
