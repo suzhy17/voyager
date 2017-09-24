@@ -9,7 +9,9 @@ jar {
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-data-mongodb")
+//    compile('org.springframework.boot:spring-boot-starter-web')
 //    compile("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
 
     testCompile('org.springframework.boot:spring-boot-starter-test')
+    //testCompile('de.flapdoodle.embed:de.flapdoodle.embed.mongo:1.48.0')
 }
