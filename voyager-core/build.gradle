@@ -9,7 +9,8 @@ jar {
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-data-mongodb")
-//    compile("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
+    compile('org.springframework.boot:spring-boot-starter-cache')
+    compile('net.sf.ehcache:ehcache:2.10.3')
 
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }

@@ -15,13 +15,19 @@ public class BookRepositoryTest {
 	private BookRepository bookRepository;
 
 	@Test
-	public void test() {
+	public void test() throws InterruptedException {
+
 		System.out.println(".... Fetching books");
-		System.out.println("isbn-1234 -->" + bookRepository.getByIsbn("isbn-1234"));
-		System.out.println("isbn-4567 -->" + bookRepository.getByIsbn("isbn-4567"));
-		System.out.println("isbn-1234 -->" + bookRepository.getByIsbn("isbn-1234"));
-		System.out.println("isbn-4567 -->" + bookRepository.getByIsbn("isbn-4567"));
-		System.out.println("isbn-1234 -->" + bookRepository.getByIsbn("isbn-1234"));
-		System.out.println("isbn-1234 -->" + bookRepository.getByIsbn("isbn-1234"));
+		System.out.println("isbn-1 -->" + bookRepository.getByIsbn("isbn-1"));
+		Thread.sleep(1000L);
+		System.out.println("isbn-1 -->" + bookRepository.getByIsbn("isbn-1"));
+		Thread.sleep(1000L);
+		System.out.println("isbn-1 -->" + bookRepository.getByIsbn("isbn-1"));
+		Thread.sleep(1000L);
+		System.out.println("isbn-1 -->" + bookRepository.getByIsbn("isbn-1"));
+		Thread.sleep(5000L);
+		System.out.println("isbn-1 -->" + bookRepository.getByIsbn("isbn-1"));
+		Thread.sleep(1000L);
+		System.out.println("isbn-1 -->" + bookRepository.getByIsbn("isbn-1"));
 	}
 }
