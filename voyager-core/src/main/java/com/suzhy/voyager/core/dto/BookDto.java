@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class Book {
+public class BookDto {
 	private String isbn;
 	private String title;
 }
